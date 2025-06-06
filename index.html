@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn Nine-Nine</title>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .bloco1{
+        width: 100%;
+        height: 90px;
+        float: left;
+        background-color: rgb(236, 236, 236);
+    }
+    .img{
+        width: 14%;
+        height: 90px;
+        float: left;
+        background-image: url(img/Logob99.png);
+        background-repeat: no-repeat;
+        margin-left: 25px;
+        margin-top: 2.5px;
+    }
+    .palavras{
+        width: 80%;
+        height: 90px;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+    }
+    .home{
+        width: 9%;
+        height: 40px;
+        float: left;
+        font-size: 30px;
+        margin-left: 30%;
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 2.5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .sobre{
+        width: 10%;
+        height: 40px;
+        float: left;
+        font-size: 30px;
+        margin-left: 5%;
+        margin-top: 20px;
+        text-align: center;
+        padding-top: 2.5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .galeria{
+        width: 12%;
+        height: 40px;
+        float: left;
+        font-size: 30px;
+        margin-left: 5%;
+        margin-top: 20px;
+        text-align: center;
+        padding-top: 2.5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .fale{
+        width: 20%;
+        height: 40px;
+        float: left;
+        font-size: 30px;
+        margin-left: 5%;
+        margin-top: 20px;
+        text-align: center;
+        padding-top: 2.5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .fundo1{
+        width: 100%;
+        height: 700px;
+        float: left;
+        background-image: url(img/fundo12.jpg);
+        background-size: 100%;
+    }
+    .bloco2{
+        width: 100%;
+        height: 900px;
+        float: left;
+        background-color: rgb(20, 75, 175);
+    }
+    .jake{
+        width: 95%;
+        height: 400px;
+        float: left;
+        margin-top: 33px;
+        margin-left: 2.5%;
+        background-color: rgb(221, 221, 221);
+        border-radius: 10px;
+    }
+    .imagem{
+        width: 25%;
+        height: 400px;
+        float: left;
+        background-image: url(img/jake2.webp);
+        background-repeat: no-repeat;
+        background-size: 100%; 
+        border-radius: 10px 0px 0px 10px;
+    }
+    .texto{
+        width: 75%;
+        height: 400px;
+        float: left;
+    }
+    .texto .titulo{
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .rosa{
+        width: 95%;
+        height: 400px;
+        float: left;
+        margin-top: 33px;
+        margin-left: 2.5%;
+        background-color: rgb(221, 221, 221);
+        border-radius: 10px;
+    }
+    .imagem2{
+        width: 25%;
+        height: 400px;
+        float: left;
+        background-image: url(img/rosa4.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .textinho{
+        width: 95%;
+        height: 250px;
+        float: left;
+        margin-left: 2.5%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .fundo2{
+        width: 100%;
+        height: 700px;
+        float: left;
+        background-image: url(img/fundo-correndo.png);
+        background-position: center;
+    }
+    .opacidade{
+        width: 100%;
+        height: 700px;
+        float: left;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .bloco3 h3{
+        width: 100%;
+        height: 100px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 100px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 200px;
+    }
+    .bloco4 h1{
+        width: 100%;
+        height: 100px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 170px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        margin-top: -60px;
+    }
+    .bloco5{
+        width: 100%;
+        height: 1350px;
+        float: left;
+        background-color: rgb(190, 190, 190);
+    }
+    .bloco5 h2{
+        color: rgb(20, 75, 175);
+        width: 100%;
+        height: 80px;
+        float: left;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 80px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .amy{
+        width: 20%;
+        height: 500px;
+        float: left;
+        background-image: url(img/amy.webp);
+        margin-left: 10%;
+        background-size: 100%;
+    }
+    .holt{
+        width: 20%;
+        height: 500px;
+        float: left;
+        background-image: url(img/holt4.jpg);
+        margin-left: 10%;
+        background-size: 100%;
+    }
+    .boyle{
+        width: 20%;
+        height: 500px;
+        float: left;
+        background-image: url(img/boyle.webp);
+        margin-left: 10%;
+        background-size: 100%;
+    }
+    .elenco{
+        width: 80%;
+        height: 550px;
+        float: left;
+        background-image: url(img/fundo2.jfif);
+        margin-left: 10%;
+        margin-top: 70px;
+        background-size: 100%;
+    }
+    .fundo3{
+        width: 100%;
+        height: 800px;
+        float: left;
+        background-image: url(img/fundo14.jpg);
+       background-size: 100%;
+    }
+    .opacidade2{
+        width: 100%;
+        height: 800px;
+        background-color: rgba(15, 69, 168, 0.7);
+    }
+    .lado-esquerdo{
+        width: 45%;
+        height: 380px;
+        float: left;
+        background-size: 90%;
+        background-image: url(img/fundo18.png);
+        background-repeat: no-repeat;
+        margin-top: 300px;
+    }
+    .lado-direito{
+        width: 55%;
+        height: 800px;
+        float: left;
+    }
+    .nome{
+        width: 100%;
+        height: 100px;
+        float: left;
+        margin-top: 160px;
+    }
+    input{
+        width: 95%;
+        height: 80px;
+        float: left;
+        border: transparent;
+        border-radius: 10px;
+        margin-left: 2.5%;
+        font-size: 40px;
+    }
+    .email{
+        width: 100%;
+        height: 100px;
+        float: left;
+        margin-top: 30px;
+    }
+    .whats{
+        width: 100%;
+        height: 100px;
+        float: left;
+        margin-top: 30px;
+    }
+    button{
+        width: 50%;
+        height: 70px;
+        float: left;
+        background-color: rgb(240, 220, 38);
+        margin-top: 30px;
+        margin-left: 25%;
+        color: white;
+        font-size: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: transparent;
+        border-radius: 10px;
+    }
+    .bloco6{
+        width: 100%;
+        height: 900px;
+        float: left;
+    }
+    .video{
+        width: 45%;
+        height: 400px;
+        float: left;
+        margin-top: 33px;
+        margin-left: 2.5%;
+        background-color: azure;
+    }
+    .bloco7{
+        width: 100%;
+        height: 50px;
+        float: left;
+        background-color: rgb(20, 75, 175);
+        font-size: 30px;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 10px;
+        font-weight: 800;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="bloco1">
+        <div class="img"></div>
+          <div class="palavras">
+            <div class="home">HOME</div>
+            <div class="sobre">SOBRE</div>
+            <div class="galeria">GALERIA</div>
+            <div class="fale">FALE CONOSCO</div>
+          </div>  
+    </div>
+
+    <div class="fundo1"></div>
+
+    <div class="bloco2">
+        <div class="jake">
+            <div class="imagem"></div>
+            <div class="texto">
+                <h4 class="titulo">Jake Peralta</h4>
+                <div class="textinho">Jake Peralta é um detetive fictício da série de comédia Brooklyn Nine-Nine. Interpretado por Andy Samberg, Jake é conhecido por seu talento excepcional para resolver casos, apesar de seu comportamento imaturo e brincalhão. Ele tem um forte senso de justiça e um grande coração, equilibrando sua tendência a não levar tudo a sério com momentos de coragem e lealdade. Ao longo da série, Jake cresce pessoal e profissionalmente, desenvolvendo um relacionamento com sua colega Amy Santiago e aprendendo a ser mais responsável sob a supervisão do capitão Raymond Holt.</div>
+            </div>
+        </div>
+        <div class="rosa">
+            <div class="texto">
+                <h4 class="titulo">Rosa Diaz</h4>
+                <div class="textinho">Rosa Diaz é uma das detetives mais misteriosas e intimidadoras da série Brooklyn Nine-Nine, interpretada por Stephanie Beatriz. Conhecida por sua personalidade reservada, voz séria e atitude durona, Rosa mantém sua vida pessoal bem privada, o que intriga seus colegas. Apesar de sua aparência rígida, ela demonstra lealdade inabalável aos amigos e um lado vulnerável em momentos chave. Sua autoconfiança e habilidades excepcionais como policial fazem dela uma figura respeitada no esquadrão, ao mesmo tempo em que sua evolução ao longo da série revela facetas mais humanas e emocionais de sua complexa personalidade.</div>
+            </div>
+            <div class="imagem2"></div>
+        </div>
+    </div>
+
+    <div class="fundo2">
+        <div class="opacidade">
+            <div class="bloco3"><h3>Está pronto para esta série</h3></div>
+            <div class="bloco4"><h1>INCRÍVEL?</h1></div>
+        </div>
+    </div>
+
+    <div class="bloco5">
+        <h2>Personagens</h2>
+        <div class="amy"></div>
+        <div class="holt"></div>
+        <div class="boyle"></div>
+        <div class="elenco"></div>
+    </div>
+
+    <div class="fundo3">
+        <div class="opacidade2">
+            <div class="lado-esquerdo"></div>
+            <div class="lado-direito">
+                <form action="#" method="POST">
+                    <div class="nome">
+                    <input type="text"
+                     name="nome"
+                     id="nome"
+                     placeholder="Nome"
+                     required>
+                    </div> 
+
+                    <div class="email">
+                    <input type="email"
+                     name="email"
+                     id="email"
+                     placeholder="Email"
+                     required>
+                    </div>
+                        
+                    <div class="whats">
+                    <input type="number"
+                     name="whats"
+                     id="whats"
+                     placeholder="WhatsApp"
+                     required>
+                    </div>
+                        
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="bloco6">
+        <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZGYjQxX7Bok?si=UMTbOWbipKGg9ySU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ourfSzoC7pA?si=PNBXw8dmM6QHYBPf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/TKfBWr6qbZc?si=XKT8uNkC4O08aQ9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Tx4Jbtp2eZE?si=BgWURiENxeh4rsjN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </div>
+
+    <div class="bloco7">Desenvolvido por: Anna Laura</div>
+</body>
+</html>
